@@ -24,7 +24,7 @@ public class EstadoDeVuelo implements Serializable {
     private int altitud, rumbo;
     
     // nos declaramos un objeto de la otra clase (CajaNegra) y lo inicializamos en el constructor
-    private static CajaNegra miCajaNegra;
+    private static CajaNegra miCajaNegraGit;
     
     private static EstadoDeVuelo miEstado;
     
@@ -34,7 +34,7 @@ public class EstadoDeVuelo implements Serializable {
           altitud=0;
           rumbo=0;
           
-          miCajaNegra= new CajaNegra();// inicializacion de un objeto
+          miCajaNegraGit= new CajaNegra();// inicializacion de un objeto
     }
     //Patron singleton
     public static EstadoDeVuelo devolverEstado(){
@@ -49,7 +49,7 @@ public class EstadoDeVuelo implements Serializable {
 
     public void setAltitud(int altitud) throws IOException {
         this.altitud = altitud;
-         miCajaNegra.registraEstado(this);//Llamamos al metodo de la clase CajaNegra
+         miCajaNegraGit.registraEstado(this);//Llamamos al metodo de la clase CajaNegra
                                            // para el cambio de altitud.
     }
 
@@ -59,7 +59,7 @@ public class EstadoDeVuelo implements Serializable {
 
     public void setRumbo(int rumbo) throws IOException {
         this.rumbo = rumbo;
-         miCajaNegra.registraEstado(this);//llamamos al metodo de la clase CajaNegra
+         miCajaNegraGit.registraEstado(this);//llamamos al metodo de la clase CajaNegra
                                           //para el cambio de rumbo
     }
     
